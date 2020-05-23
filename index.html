@@ -16,10 +16,10 @@
 
 <body>
 
-        <h3>Score: <span id="score">0</span></h3>
-        <button id="start-button">Start/Pause</button>
+        <h1 class="title">TETRIS</h1>
 
         <div class="container">
+
 
                 <div class="grid">
                         <div></div>
@@ -235,26 +235,43 @@
                         <div class="taken"></div>
                 </div>
 
-                <div class="mini-grid">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                <div class="display">
+                        <div class="scoreGrid">
+                                <h3 class="disScore">Your Score
+                                        <br>
+                                        <span id="score">0</span></h3>
+
+                                <h4 class="=bestScore">Best Score
+                                        <span id="bScore">0</span></h4>
+
+                                <div class="mini-grid">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                </div>
+                        </div>
+
+                        <div class="button" id="new-game">New Game</div>
+                        <div class="button" id="start-button">Start/Pause</div>
                 </div>
 
+
+
         </div>
+
+        <audio src="Resources/Tetris_theme.ogg" type="audio/ogg" id="sound"></audio>
 
 
 

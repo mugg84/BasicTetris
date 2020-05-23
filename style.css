@@ -1,34 +1,132 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  padding: 0;
+  color: rgb(64, 70, 75);
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(114, 187, 104),
+    rgb(102, 116, 243)
+  );
+}
+
+.title {
+  position: absolute;
+  top: 0;
+  font-size: 4rem;
+  text-shadow: 2px 2px #795b5b;
+}
+
 .container {
   display: flex;
 }
 
 .grid {
-  width: 200px;
-  height: 400px;
+  width: 20rem;
+  height: 40rem;
   display: flex;
   flex-wrap: wrap;
-  background-color: yellow;
+  background-image: linear-gradient(45deg, black, transparent);
+  border-radius: 0.6rem;
+  box-shadow: 2px 3px 2px #616161;
 }
 
 .grid div {
-  height: 20px;
-  width: 20px;
+  height: 2rem;
+  width: 2rem;
 }
 
 .tetromino {
-  background-color: blue;
+  border-radius: 0.3rem;
+  border: 1px solid rgb(128, 128, 128);
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40vh;
+}
+
+.scoreGrid {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 60%;
+  width: 60%;
+  border-radius: 0.6rem;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(224, 224, 224),
+    rgb(170, 159, 159)
+  );
+  box-shadow: 2px 3px 2px #616161;
+}
+
+.disScore {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#score {
+  font-size: 3.5rem;
 }
 
 .mini-grid {
-  margin-left: 20px;
-  width: 80px;
-  height: 80px;
+  width: 8rem;
+  height: 8rem;
   display: flex;
   flex-wrap: wrap;
-  background-color: yellow;
+  align-items: center;
 }
 
 .mini-grid div {
-  width: 20px;
-  height: 20px;
+  width: 2rem;
+  height: 2rem;
+}
+
+.button {
+  font-size: 1.5rem;
+  text-align: center;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(224, 224, 224),
+    rgb(170, 159, 159)
+  );
+  padding: 0.5rem;
+  margin: 1rem 0 0 0;
+  border-radius: 0.6rem;
+  box-shadow: 2px 3px 2px #616161;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(199, 198, 198),
+    rgb(158, 149, 149)
+  );
+}
+
+.button:active {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(199, 198, 198),
+    rgb(158, 149, 149)
+  );
+  box-shadow: 2px 3px 2px #616161;
+  transform: translateY(2px);
 }
